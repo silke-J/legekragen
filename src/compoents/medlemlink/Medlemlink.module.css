@@ -1,0 +1,77 @@
+.medlemlink {
+  background-color: #d7e6ed;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #355675;
+  justify-items: center;
+}
+.medlemlink p {
+  font-family: Quicksand;
+  font-size: 15px;
+  width: 250px;
+  font-weight: 400;
+}
+.medlemlink h2 {
+  font-family: Square Peg;
+  font-size: 60px;
+  font-weight: 400;
+  margin-top: -20px;
+}
+
+.medlemlink button{
+  padding: 10px 20px;
+  border: none;
+  background-color: #355675;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  margin: 1em;
+  width: 200px;
+height: 44px;
+border-radius: 50px;
+
+}
+a {
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  font-family: Quicksand;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: center;
+}
+
+.medlemlink button:hover {
+  background-color: #9478a8c9;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.active {
+  transform: translateY(0);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #355675;
+}
+
+@media (min-width: 768px) {
+    .medlemlink button{
+        width: 300px;
+        height: 50px;
+    }
+    a{
+        font-size: 20px;
+    }
+    .medlemlink p {
+  font-size: 20px;
+}
+.medlemlink h2 {
+  font-size:80px;
+}
+}

@@ -1,0 +1,49 @@
+.kundeservice {
+  background-color: #355675;
+  width: 100%;
+  color: white;
+  display: block;
+  justify-content: center;
+}
+h2 {
+  font-weight: 400;
+  font-family: Square Peg;
+  font-size: 50px;
+  padding-top: 30px;
+}
+.email {
+  display: flex;
+  justify-content: center;
+}
+.tele {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+h3 {
+  font-family: Quicksand;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+h4 {
+  font-family: Quicksand;
+  font-size: 24px;
+  font-weight: 400;
+}
+.socialMedia {
+  padding-bottom: 90px;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 90px;
+    
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,15 @@
+.text_top{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #D7E6ED;
+}
+.text h3{
+    font-size: 15px;
+    margin-top: 2px;
+    margin-left: 10px;
+    color:#355675;
+}
+.fragtcar_img{
+    color: #355675;
+}

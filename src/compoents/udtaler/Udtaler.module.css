@@ -1,0 +1,62 @@
+.udtaler {
+  color: #355675;
+  justify-items: center;
+}
+.udtaler h2 {
+  font-family: Square Peg;
+  font-size: 40px;
+  font-weight: 400;
+}
+.udtaler h3 {
+  font-family: Quicksand;
+  font-size: 40px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.udtaler h4 {
+  font-family: "Be Vietnam Pro";
+  font-size: 12px;
+  font-weight: 400;
+  width: 300px;
+  margin-bottom: 5px;
+}
+.udtaler h5 {
+  font-family: "Advent Pro";
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 300;
+   margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .udtaler h2 {
+  font-size: 60px;
+}
+.udtaler h3 {
+  font-size: 60px;
+}
+.udtaler h4 {
+  font-size: 20px;
+  width: 400px;
+  margin-bottom: 10px;
+}
+.udtaler h5 {
+  font-size: 20px;
+}
+.Flex{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.kunde1{
+  margin-right: 40px;
+}
+.kunde2{
+  margin-right: 40px;
+}
+.kunde3{
+margin-bottom: 50px;
+}
+
+}
