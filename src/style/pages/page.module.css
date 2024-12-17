@@ -1,0 +1,66 @@
+.home,
+.products {
+  background-color: #c1aece;
+  width: 100%;
+}
+
+.FAQ {
+  display: block;
+  justify-items: center;
+}
+.spørgsmål {
+  border: #355675 solid 1px;
+  width: 350px;
+  height: auto;
+  justify-items: center;
+  border-radius: 30px;
+  margin-bottom: 30px;
+}
+.question {
+  width: 300px;
+  margin-bottom: 10px;
+}
+.answers {
+  margin-bottom: 40px;
+  width: 300px;
+}
+li {
+  list-style: disc;
+}
+
+.betalekurvTitle {
+  font-size: 40px;
+  padding-top: 20px;
+  font-family: "Square Peg";
+  color: white;
+}
+.betalekurvBackground {
+  background-color: #9478a8;
+  height: 150px;
+}
+
+@media (min-width: 768px) {
+  .betalekurvTitle {
+    font-size: 50px;
+    padding-top: 30px;
+  }
+  .betalekurvBackground {
+    height: 200px;
+  }
+}
+@media (min-width: 1024px) {
+  .FAQ {
+    height: 400px;
+    padding-top: 50px;
+  }
+  .spørgsmål {
+    width: 700px;
+  }
+  .betalekurvTitle {
+    font-size: 50px;
+    padding-top: 30px;
+  }
+  .betalekurvBackground {
+    height: 200px;
+  }
+}

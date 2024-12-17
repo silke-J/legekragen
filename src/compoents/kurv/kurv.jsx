@@ -1,28 +1,21 @@
-import { useLocalStorage } from "@uidotdev/usehooks";
-import { useEffect, useState } from "react";
+;import { useLocalStorage } from "@uidotdev/usehooks";
 import Card from "../card/card";
 import { useFetchproducts } from "../../hoods/useFetchprodukts";
 
-const Myfav = () => {
-  <div className="title">
-    <h2>Alt vores</h2>
-    <h3>LEGETØJ</h3>
-  </div>;
-
+const Betalekurv = () => {
   const [favorites] = useLocalStorage("Favortites", []);
-  const [error, setError] = useState(null);
   const { products } = useFetchproducts();
 
   const favortiteproducts = products.filter((product) =>
-    favorites.includes(product.id)
+    favorites.includes(product._id)
   );
 
   return (
     <section className="grid">
       {favortiteproducts?.map((product) => (
-        <Card key={product.id} product={product} />
+        <Card key={product._id} product={product} basketItem={true} />
       ))}
     </section>
   );
 };
-export default Myfav;
+export default Betalekurv;

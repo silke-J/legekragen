@@ -27,6 +27,57 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  padding: 1em 2em;
-  gap: 20px;
+  padding: 2em 1em;
+  gap: 50px;
 }
+
+.product{
+  color: white;
+  margin-bottom: 20px;
+  display: block;
+  justify-items: center; 
+}
+.product h2{
+font-family: "Square Peg";
+font-size: 50px;
+font-weight: 400;
+}
+.product h3{
+font-family: "Quicksand";
+font-size: 40px;
+font-weight: 300;
+}
+
+
+ @media (min-width: 768px) {
+  .grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  padding: 4em 2em;
+  gap: 30px;
+}
+.product h2{
+font-size: 120px;
+}
+.product h3{
+font-size: 100px;
+}
+
+ }
+
+ @media (min-width:  1025px) {
+  .product h2{
+font-size: 70px;
+}
+.product h3{
+font-size: 60px;
+}
+.grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  padding: 4em 30em;
+  gap: 80px;
+}
+ }

@@ -1,6 +1,7 @@
 import PageHeader from "../compoents/pageheader/PageHeader/PageHeader";
 import img from "../assets/heros/FAQ.jpg";
 import MedlemLink from "../compoents/medlemlink/Medlemlink";
+import Question from "../compoents/Question/Question";
 
 const FAQ = () => {
   return (
@@ -11,7 +12,9 @@ const FAQ = () => {
         subTitle="SPØRGSMÅL?"
         bodyText="Måske er de allerede besvaret herunder. Ellers er du altid velkommen til at kontakte os."
       />
-      <MedlemLink/>
+    <Question/>
+
+      <MedlemLink />
     </>
   );
 };

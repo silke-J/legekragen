@@ -69,9 +69,8 @@
   overflow: hidden;
   margin: 1em;
   width: 300px;
-height: 56px;
-border-radius: 50px;
-
+  height: 56px;
+  border-radius: 50px;
 }
 .lukbutton a {
   color: white;
@@ -95,12 +94,42 @@ border-radius: 50px;
   background-color: #355675;
 }
 
+
 @media (min-width: 768px) {
   .form {
-    min-width: 500px;
+    min-width: 700px;
 
     label {
       font-size: 1.5em;
+    }
+    .form input[type="email"],
+   .form input[type="text"] {
+      padding: 1em;
+      font-size: 1.1em;
+      border-radius: 20px;
+      width: calc(100% - 1em);
+      border: #355675 solid 2px;
+      font-family: "Advent Pro";
+    }
+  }  
+}
+
+
+@media (min-width: 1500px) {
+  .form {
+    min-width: 900px;
+
+    label {
+      font-size: 1.5em;
+    }
+    .form input[type="email"],
+    .form input[type="text"] {
+      padding: 1em;
+      font-size: 1em;
+      border-radius: 20px;
+      width: calc(100% - 1em);
+      border: #355675 solid 2px;
+      font-family: "Advent Pro";
     }
   }
 }

@@ -3,6 +3,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/logo/legekrogen_logo.png"
+import { CiShoppingBasket } from "react-icons/ci";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,11 +12,34 @@ const Navigation = () => {
     setIsOpen(!isOpen);
   };
 
+
+
   return (
     <nav>
-      <img src={logo} alt="Legekrogen`s logo" />
-      <div className="burger-menu" onClick={toggleMenu}>
-        {isOpen ? <IoClose size={30} /> : <GiHamburgerMenu size={30} />}
+      <div>
+        <ul>
+          <NavLink to="/">
+            <img className="logo" src={logo} alt="Legekrogen`s logo" />
+          </NavLink>
+        </ul>
+      </div>
+
+      <div className="click-button">
+        <div className="kurv-button">
+          <ul>
+            <NavLink to="/kurv">
+              <CiShoppingBasket size={30} color="white" className="kurv" />
+            </NavLink>
+          </ul>
+        </div>
+
+        <div className="burger-menu" onClick={toggleMenu}>
+          {isOpen ? (
+            <IoClose size={30} className="close" />
+          ) : (
+            <GiHamburgerMenu size={30} className="burger" />
+          )}
+        </div>
       </div>
 
       <ul

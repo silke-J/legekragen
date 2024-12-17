@@ -1,7 +1,7 @@
 .button {
   padding: 10px 20px;
   border: none;
-  background-color:#9478A8C9;
+  background-color: #9478a8c9;
   color: white;
   font-size: 16px;
   font-weight: bold;
@@ -12,7 +12,8 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
-  margin: 1em;
+  margin-bottom: 2em;
+  margin-top: 1em;
 }
 
 .button:hover {
@@ -25,4 +26,25 @@
   transform: translateY(0);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #355675;
+}
+
+
+@media (min-width: 768px) {
+ .button {
+    height: 70px;
+    width: 200px;
+    margin-left: 60px;
+    font-size: 20px;
+
+  }
+}
+
+
+@media (min-width: 1023px) {
+  .button {
+    height: 70px;
+    width: 250px;
+    font-size: 20px;
+  }
+
 }

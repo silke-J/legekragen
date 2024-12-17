@@ -10,11 +10,11 @@ const Newsletter = () => {
   const [inputValueM, setInputValueM] = useState("");
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
-  const inputRef = useRef(null);
+  // const inputRef = useRef(null);
 
-  useEffect(() => {
-    inputRef.current.focus();
-  }, []);
+  // useEffect(() => {
+  //   inputRef.current.focus();
+  // }, []);
 
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
@@ -48,12 +48,10 @@ const Newsletter = () => {
       openModal();
       console.log(result)
       setIsLoading(false);
-      setInputValueE("");
-      setInputValueN("");
-      setInputValueM("");
     } catch (error) {
       console.error("Fejl ved tilmelding:", error.message);
     }
+    finally{setIsLoading(false)}
   };
 
   return (
@@ -68,7 +66,7 @@ const Newsletter = () => {
             value={inputValueN}
             onChange={handleInputNavn}
             required
-            ref={inputRef}
+           
           />
           <input
             type="email"
@@ -76,7 +74,7 @@ const Newsletter = () => {
             value={inputValueE}
             onChange={handleInputEmail}
             required
-            ref={inputRef}
+          
           />
           <textarea
             type="text"
@@ -84,7 +82,6 @@ const Newsletter = () => {
             placeholder="Hvem køber du legetøj til?"
             onChange={handleInputMessage}
             required
-            ref={inputRef}
           />
           <Button buttonText="BLIV MEDLEM NU!" type="submit" />
         </form>
@@ -94,7 +91,7 @@ const Newsletter = () => {
         <Modal onClose={closeModal}>
           <div className={styles.submitBesked}>
             <div className={styles.besked}>
-              <h2>Tak! {inputValueN}</h2>
+              <h2>Tak {inputValueN} !</h2>
 
               <p>Vi er så glade for at du vil være en del af vores kundeklub</p>
 
