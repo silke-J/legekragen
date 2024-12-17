@@ -16,13 +16,11 @@ const Navigation = () => {
 
   return (
     <nav>
-      <div>
-        <ul>
-          <NavLink to="/">
-            <img className="logo" src={logo} alt="Legekrogen`s logo" />
-          </NavLink>
-        </ul>
-      </div>
+      <ul>
+        <NavLink to="/">
+          <img className="logo" src={logo} alt="Legekrogen`s logo" />
+        </NavLink>
+      </ul>
 
       <div className="click-button">
         <div className="kurv-button">
@@ -40,25 +38,25 @@ const Navigation = () => {
             <GiHamburgerMenu size={30} className="burger" />
           )}
         </div>
-      </div>
 
-      <ul
-        className={isOpen ? "nav-links open" : "nav-links"}
-        onClick={toggleMenu}
-      >
-        <li>
-          <NavLink to="/">Foreside</NavLink>
-        </li>
-        <li>
-          <NavLink to="/products">Products</NavLink>
-        </li>
-        <li>
-          <NavLink to="/faq">FAQ</NavLink>
-        </li>
-        <li>
-          <NavLink to="/kundeklubben">Kundeklubben</NavLink>
-        </li>
-      </ul>
+        <ul
+          className={isOpen ? "nav-links open" : "nav-links"}
+          onClick={toggleMenu}
+        >
+          <li>
+            <NavLink to="/">Foreside</NavLink>
+          </li>
+          <li>
+            <NavLink to="/products">Products</NavLink>
+          </li>
+          <li>
+            <NavLink to="/faq">FAQ</NavLink>
+          </li>
+          <li>
+            <NavLink to="/kundeklubben">Kundeklubben</NavLink>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 };

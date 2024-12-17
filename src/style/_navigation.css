@@ -13,18 +13,18 @@ nav {
 }
 .click-button {
   display: flex;
-  justify-content: space-between;
 }
 
 .kurv-button {
-  margin-right: 10px;
-  margin-top: 1px;
+  margin-left: 10px;
+  margin-top: 2px;
 }
 
 .headerImg {
   height: auto;
   width: 80px;
 }
+
 
 .burger-menu {
   cursor: pointer;
