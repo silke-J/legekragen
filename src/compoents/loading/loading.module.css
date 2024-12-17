@@ -8,7 +8,7 @@
   background-repeat: no-repeat;
   position: relative;
   clip-path: inset(-100% 0 0 0);
-  animation: l2-0 5s infinite steps(4);
+  animation: l2-0 2s infinite steps(4);
 }
 .loader::before,
 .loader::after {
