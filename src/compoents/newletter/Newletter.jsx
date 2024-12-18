@@ -46,7 +46,6 @@ const Newsletter = () => {
 
       const result = await response.json();
       openModal();
-      console.log(result)
       setIsLoading(false);
     } catch (error) {
       console.error("Fejl ved tilmelding:", error.message);

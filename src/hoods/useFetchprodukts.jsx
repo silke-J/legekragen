@@ -9,7 +9,7 @@ const useFetchproducts = () => {
     try {
       const response = await fetch("https://legekrogen.webmcdm.dk/products/");
       const data = await response.json();
-      console.log(data);
+      
       setProducts(data);
     } catch (error) {
       setError(error.message);
@@ -20,7 +20,7 @@ const useFetchproducts = () => {
   };
 
   let recommended = products.filter((p) => p.recommended === true);
-  console.log(recommended);
+  
 
   useEffect(() => {
     fetchproducts();

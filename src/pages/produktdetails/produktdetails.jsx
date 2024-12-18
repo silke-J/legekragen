@@ -20,7 +20,7 @@ const ProductDetails = () => {
   useEffect(() => {
     fetchproductById(id);
   }, [id]);
-  console.log(product)
+
 
   return (
     <>

@@ -8,7 +8,6 @@ import styles from "../style/pages/page.module.css";
 
 const Products = () => {
   const {products} = useFetchproducts()
-  console.log(products)
   return (
     <article className={styles.products}>
       <PageHeaderProducts

@@ -7,7 +7,6 @@ import parse from "html-react-parser"
 
 const Question = () => {
     const {qustions} = useFetchqustions()
-    console.log(qustions)
 
 //   const faq = [
 //     {
@@ -47,7 +46,6 @@ const [isOpen, setisOpen] = useState(null);
     setisOpen((prev) => prev === id ? null : id);
 
   }
-  console.log(isOpen)
   return (
     <>
       <div className={styles.FAQ}>
